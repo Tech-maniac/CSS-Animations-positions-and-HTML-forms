@@ -1,0 +1,88 @@
+/*Global variables*/
+:root{
+    --blue :#76b5c5;
+    --width: 50px;
+}
+
+body{
+    background-color: var(--blue);
+}
+
+@keyframes demoAnimation 
+{
+    from {background-color: blue;}
+    to {background-color: yellow;}
+}
+
+@keyframes demoAnimation2 {
+    0% {background-color: blueviolet;}
+    25% {background-color: aquamarine;}
+    50% {background-color: brown;}
+    100%{background-color: black;}
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    animation: demoAnimation2 20s;
+
+}
+
+.LinearGradient{
+    /*Local variable*/
+    --width:400px;
+
+    border: 5px solid black;
+    width: var(--width);
+    height: 200px;
+    margin-bottom: 30px;
+    /*visibility: visible;*/
+    background-image: linear-gradient(to right top,red 30%,green,yellow);
+}
+
+.RadialGradient{
+    border: 5px solid black;
+    width: 200px;
+    height: 200px;
+    background-image: repeating-radial-gradient(circle at center, red 0, blue, green 10px);
+}
+
+span{
+    background-color: yellowgreen;
+}
+p{
+    display: none;
+    /*visibility: hidden;*/
+    background-color: aqua;
+}
+#div-1 
+{ 
+    background-color: #FF5C35; 
+}
+
+#div-2 
+{
+  position: relative;
+  left: 100px;
+  top:100px;
+  background-color: #0068B1;
+
+}
+
+#div-3 
+{ 
+    background-color: #4FB06D; 
+
+}
+
+div 
+{
+  width: 75px;
+  height: 75px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 75px;
+  color: white;
+  font-size: 24px;
+}
